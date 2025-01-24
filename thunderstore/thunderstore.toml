@@ -4,9 +4,9 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "Gogas1"
 name = "ExtendedStoryModeSettings"
-versionNumber = "0.1.0"
+versionNumber = "0.1.1"
 description = "Extends the story mode settings with the ability to weaken Yi"
-websiteUrl = "link to the git repo"
+websiteUrl = "https://github.com/Gogas1/ExtendedStoryModeSettings"
 containsNsfwContent = false
 
 [package.dependencies]

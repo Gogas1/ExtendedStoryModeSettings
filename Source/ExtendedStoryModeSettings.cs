@@ -53,7 +53,6 @@ public class ExtendedStoryModeSettings : BaseUnityPlugin {
         if (attackRatioSlider != null) {
             attackRatioSlider.minValue = 0f;
             attackRatioSlider.OverrideStpSize = 1;
-
         }
 
         if (takenDamageSliderSlider != null) {

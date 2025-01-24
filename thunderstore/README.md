@@ -1,4 +1,3 @@
-# Nine Sols Example Mod
+# ExtendedStoryModeSettings mod
 
-Write a description of your mod here, it will be displayed on thunderstore.
-Remember to update the icon.png to something representing your mod.
+Changes the limits of the story mode settings. The lower limit of damage dealt is set to 0%. The upper limit of damage taken is set to 1000%.
