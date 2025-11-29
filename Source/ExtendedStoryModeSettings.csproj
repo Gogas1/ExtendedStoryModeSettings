@@ -8,26 +8,30 @@
         <Nullable>enable</Nullable>
         <PublishRelease>true</PublishRelease>
         <NoWarn>MSB3277</NoWarn>
+
+		<NineSolsPath Condition="'$(OS)' == 'Windows_NT'">D:\SteamLibrary\steamapps\common\Nine Sols</NineSolsPath>
+		<NineSolsPath Condition="'$(OS)' != 'Windows_NT'">$(HOME)/.local/share/Steam/steamapps/common/Nine Sols</NineSolsPath>
+		<DllPath>$(NineSolsPath)/NineSols_Data/Managed</DllPath>
     </PropertyGroup>
 
     <ItemGroup>
 		<Reference Include="Assembly-CSharp">
-			<HintPath>Libs/Assembly-CSharp.dll</HintPath>
+			<HintPath>$(DllPath)/Assembly-CSharp.dll</HintPath>
 		</Reference>
 		<Reference Include="rcg.rcgmakercore.Runtime">
-			<HintPath>Libs/rcg.rcgmakercore.Runtime.dll</HintPath>
+			<HintPath>$(DllPath)/rcg.rcgmakercore.Runtime.dll</HintPath>
 		</Reference>
 		<Reference Include="RCG_General">
-			<HintPath>Libs/RCG_General.dll</HintPath>
+			<HintPath>$(DllPath)/RCG_General.dll</HintPath>
 		</Reference>
 		<Reference Include="InControl">
-			<HintPath>Libs/InControl.dll</HintPath>
+			<HintPath>$(DllPath)/InControl.dll</HintPath>
 		</Reference>
 		<Reference Include="Unity.TextMeshPro">
-			<HintPath>Libs/Unity.TextMeshPro.dll</HintPath>
+			<HintPath>$(DllPath)/Unity.TextMeshPro.dll</HintPath>
 		</Reference>
 		<Reference Include="UnityEngine.UI">
-			<HintPath>Libs/UnityEngine.UI.dll</HintPath>
+			<HintPath>$(DllPath)/UnityEngine.UI.dll</HintPath>
 		</Reference>
     </ItemGroup>
 
